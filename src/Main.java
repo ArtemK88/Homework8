@@ -6,11 +6,12 @@ public class Main {
         print[2] = new Book("Історія");
         print[3] = new Magazine("Інформатика");
 
+        Printable printable = () -> System.out.println(" ");
 
-        for (Printable printable : print) {
-            printable.print();
+        for (Printable printable1 : print) {
+            printable1.print();
         }
-
+        printable.print();
         Magazine.printMagazines(print);
         Book.printBooks(print);
     }
